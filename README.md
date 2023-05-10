@@ -241,9 +241,33 @@ pipenv shell
 pipenv install
 
 ```
+### Getting Started
+Pre-requisites and Local Development
+You should already have Python3, pip and node installed on your local machines To create a virtual environment on MacOS, run: python3 -m venv env To activate the virtual environment, run: source env/bin/activate
 
-### Database Setup
-
+### About the Stack
+Backend
+On MacOS, to set up all the dependencies, run: pip install requirements.txt To run the application on your local machine, run: python3 app.py .The application is hosted on https://capstone-zokq.onrender.com/ and can also be run locally at https://127.0.0.1:3000/ . The PostgreSQL database is hosted on Render. If you want to run locally using your local databse, you can modify the following fields in the models.py file: app.config['SQLALCHEMY_DATABASE_URI']=<your_local_database_uri>
+  
+### Database Setup - cloud hosting on Render
+  NOTE: I am not giving instructions to set up this application in heroku cause it is no longer free and I myself have used Render only.
+To create all the tables needed for this application in local environment first set SLQALCHEMY_DATABASE_URI and then
+  cd <this folder location>
+  flask db upgrade
+to create tables in Render you first need to set up PostgreSQL database in Render, then copy the `External Database URL` mentioned in connect drop down at the top right corner, post copying set the app.config['SQLALCHEMY_DATABASE_URI']= `External Database URL`, post that run
+  cd <this folder location>
+  flask db upgrade
+If you want to run this application in Render then you can follow the instructions mentioned in https://render.com/docs/deploy-flask#:~:text=You%20can%20deploy%20a%20Flask,%2Dhello%2Dworld%20on%20GitHub.
+  in the start command settings you need to fill the following:
+`gunicorn app:app`
+  rest of the instructions can be followed directly from the link provided above
+  
+### Dependencies
+  This project heavily uses FLASK, SQLalchemy, POSTGRES to create and set up models, for authentication jwt's generated using Auth0 with access tokens are used.
+  Reason for using this tech stack is that it is simple to deploy and can be scaled up easily, sqlAlchemy provides the abstraction to interact with all databases using a common syntax and postgres is the most commonly used free databases, flask is chosen because of the clarity in code and features which can be added on top of it, Auth0 is used for authentication because of its community support and ease of use
+  
+  Although the tech stack may be simple, but it gets the job done like helps to visualize the real world scenario effectively
+  
 With Postgres running, create a database:
 
 ```
