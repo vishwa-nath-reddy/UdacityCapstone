@@ -5,9 +5,7 @@ from flask import Flask, redirect, render_template, session, url_for
 from os import environ as env
 from flask_migrate import Migrate
 
-ENV_FILE = find_dotenv()
-if ENV_FILE:
-    load_dotenv(ENV_FILE)
+
 # ----------------------------------------------------------------------------#
 # App Config.
 # ----------------------------------------------------------------------------#
@@ -15,8 +13,8 @@ if ENV_FILE:
 app = Flask(__name__)
 app.secret_key = env.get("APP_SECRET_KEY")
 moment = Moment(app)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://vishwa:OjyIkfIaAQfmm4Mvg9O7ropwjUIJFV4K@dpg-ch9uahusi8uqs8mvbiag-a.oregon-postgres.render.com/movies_jtyq'
-#postgres://vishwa:OjyIkfIaAQfmm4Mvg9O7ropwjUIJFV4K@dpg-ch9uahusi8uqs8mvbiag-a.oregon-postgres.render.com/movies_jtyq
+app.config['SQLALCHEMY_DATABASE_URI'] = env.get('SLQALCHEMY_DATABASE_URI')
+#postgresql://vishwa:OjyIkfIaAQfmm4Mvg9O7ropwjUIJFV4K@dpg-ch9uahusi8uqs8mvbiag-a.oregon-postgres.render.com/movies_jtyq
 db = SQLAlchemy(app)
 
 migrate = Migrate(app, db)
