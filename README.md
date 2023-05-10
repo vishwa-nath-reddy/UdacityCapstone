@@ -29,7 +29,7 @@ There are 4 types of users here
 
 ## Application hosting link
 
-https://fsnd-family-tree.herokuapp.com
+https://capstone-zokq.onrender.com
 
 ## Authorization and accessing api's
 1. Sensitive information is available only on logging in and passing the jwt token for each request
@@ -38,15 +38,9 @@ https://fsnd-family-tree.herokuapp.com
 
 # Click here to login to authenticate
 
-`https://dev-ex65k2q24qccu08f.us.auth0.com/authorize?audience=Movies&response_type=token&client_id=xSSpIpdRmYoyVWt1nQ8vbV9vdTPs9uZN&redirect_uri=https://127.0.0.1:3000/callback`
+https://dev-ex65k2q24qccu08f.us.auth0.com/authorize?audience=Movies&response_type=token&client_id=xSSpIpdRmYoyVWt1nQ8vbV9vdTPs9uZN&redirect_uri=https://127.0.0.1:3000/callback
 
-### Retreiving data 
-
-The allowed requests are as follows:
-1.
-
-
-
+Please use the post man to request data 
 
 ## Installation
 
