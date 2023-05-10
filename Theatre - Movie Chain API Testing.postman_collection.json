@@ -1,0 +1,768 @@
+{
+	"info": {
+		"_postman_id": "6e52aca2-5efc-4eaa-9602-ba7dc5c7d239",
+		"name": "Theatre - Movie Chain API Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26788346"
+	},
+	"item": [
+		{
+			"name": "Movie Producer",
+			"item": [
+				{
+					"name": "Movie Details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJCNFNNdzRTZDF3VjJ0bnU3WUNYWSJ9.eyJpc3MiOiJodHRwczovL2Rldi1leDY1azJxMjRxY2N1MDhmLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NDU3YzNlYTg0NDhkZWQ2YWE2OGRkMDAiLCJhdWQiOiJNb3ZpZXMiLCJpYXQiOjE2ODM3MjAyMzMsImV4cCI6MTY4MzcyNzQzMywiYXpwIjoieFNTcElwZFJtWW95Vld0MW5ROHZiVjl2ZFRQczl1Wk4iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTptb3ZpZSIsImRlbGV0ZTpzaG93IiwiZGVsZXRlOnZlbnVlIiwiZ2V0Om1vdmllIiwiZ2V0OnZlbnVlIiwicGF0Y2g6bW92aWUiLCJwYXRjaDpzaG93IiwicGF0Y2g6dmVudWUiLCJwb3N0Om1vdmllIiwicG9zdDpzaG93IiwicG9zdDp2ZW51ZSJdfQ.m9AZnEtJ89d8Su73dQtpM-OpkM-jruOcg8KJVlgRrg3bbkwb3KVOnJD2qJMSEEswShaATklG0wKvBpZRDnV6BXgJpcb3iiMZMSNP3BGxuyzqtrf7UiELjZ56MPXtAdlQ1h4xfOgTLDSBROEqnkCNtGzCo3HUl43ieMtaej7WJn47qQXHj3MeNeS9OfJ6K9WImYHoYMhk741zfzm8w4zKcjNh8IJKIT5KiaSm9r8YTTG2Sy4PeeBs6BCDDN6k4lYsdHGy1B_5h_PDls99NA0EaWZkoLuYQ5s1ZBtxVfpvJTsxFTLdyT-rO6F7pynds3haDD5RjFVd5eEH_Fo0myGCbw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://capstone-zokq.onrender.com/movie/owner/1",
+							"protocol": "https",
+							"host": [
+								"capstone-zokq",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"movie",
+								"owner",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Movie",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJCNFNNdzRTZDF3VjJ0bnU3WUNYWSJ9.eyJpc3MiOiJodHRwczovL2Rldi1leDY1azJxMjRxY2N1MDhmLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NDU3YzNlYTg0NDhkZWQ2YWE2OGRkMDAiLCJhdWQiOiJNb3ZpZXMiLCJpYXQiOjE2ODM3MjAyMzMsImV4cCI6MTY4MzcyNzQzMywiYXpwIjoieFNTcElwZFJtWW95Vld0MW5ROHZiVjl2ZFRQczl1Wk4iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTptb3ZpZSIsImRlbGV0ZTpzaG93IiwiZGVsZXRlOnZlbnVlIiwiZ2V0Om1vdmllIiwiZ2V0OnZlbnVlIiwicGF0Y2g6bW92aWUiLCJwYXRjaDpzaG93IiwicGF0Y2g6dmVudWUiLCJwb3N0Om1vdmllIiwicG9zdDpzaG93IiwicG9zdDp2ZW51ZSJdfQ.m9AZnEtJ89d8Su73dQtpM-OpkM-jruOcg8KJVlgRrg3bbkwb3KVOnJD2qJMSEEswShaATklG0wKvBpZRDnV6BXgJpcb3iiMZMSNP3BGxuyzqtrf7UiELjZ56MPXtAdlQ1h4xfOgTLDSBROEqnkCNtGzCo3HUl43ieMtaej7WJn47qQXHj3MeNeS9OfJ6K9WImYHoYMhk741zfzm8w4zKcjNh8IJKIT5KiaSm9r8YTTG2Sy4PeeBs6BCDDN6k4lYsdHGy1B_5h_PDls99NA0EaWZkoLuYQ5s1ZBtxVfpvJTsxFTLdyT-rO6F7pynds3haDD5RjFVd5eEH_Fo0myGCbw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Homecoming\",\r\n    \"language\":\"English\",\r\n    \"producer\":\"abc\",\r\n    \"director\":\"def\",\r\n    \"budget\":500000,\r\n    \"actors\":\"a bv cd fe\",\r\n    \"planned_release_date\":\"2023-01-01\",\r\n    \"ticket_price\":200\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://capstone-zokq.onrender.com/movie/add",
+							"protocol": "https",
+							"host": [
+								"capstone-zokq",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"movie",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Movie 2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJCNFNNdzRTZDF3VjJ0bnU3WUNYWSJ9.eyJpc3MiOiJodHRwczovL2Rldi1leDY1azJxMjRxY2N1MDhmLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NDU3YzNlYTg0NDhkZWQ2YWE2OGRkMDAiLCJhdWQiOiJNb3ZpZXMiLCJpYXQiOjE2ODM3MjAyMzMsImV4cCI6MTY4MzcyNzQzMywiYXpwIjoieFNTcElwZFJtWW95Vld0MW5ROHZiVjl2ZFRQczl1Wk4iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTptb3ZpZSIsImRlbGV0ZTpzaG93IiwiZGVsZXRlOnZlbnVlIiwiZ2V0Om1vdmllIiwiZ2V0OnZlbnVlIiwicGF0Y2g6bW92aWUiLCJwYXRjaDpzaG93IiwicGF0Y2g6dmVudWUiLCJwb3N0Om1vdmllIiwicG9zdDpzaG93IiwicG9zdDp2ZW51ZSJdfQ.m9AZnEtJ89d8Su73dQtpM-OpkM-jruOcg8KJVlgRrg3bbkwb3KVOnJD2qJMSEEswShaATklG0wKvBpZRDnV6BXgJpcb3iiMZMSNP3BGxuyzqtrf7UiELjZ56MPXtAdlQ1h4xfOgTLDSBROEqnkCNtGzCo3HUl43ieMtaej7WJn47qQXHj3MeNeS9OfJ6K9WImYHoYMhk741zfzm8w4zKcjNh8IJKIT5KiaSm9r8YTTG2Sy4PeeBs6BCDDN6k4lYsdHGy1B_5h_PDls99NA0EaWZkoLuYQ5s1ZBtxVfpvJTsxFTLdyT-rO6F7pynds3haDD5RjFVd5eEH_Fo0myGCbw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Homecoming2\",\r\n    \"language\":\"English Taiwan\",\r\n    \"producer\":\"abc\",\r\n    \"director\":\"def\",\r\n    \"budget\":800000,\r\n    \"actors\":\"a bv cd fe\",\r\n    \"planned_release_date\":\"2023-01-01\",\r\n    \"ticket_price\":200\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://capstone-zokq.onrender.com/movie/add",
+							"protocol": "https",
+							"host": [
+								"capstone-zokq",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"movie",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Movie 3",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJCNFNNdzRTZDF3VjJ0bnU3WUNYWSJ9.eyJpc3MiOiJodHRwczovL2Rldi1leDY1azJxMjRxY2N1MDhmLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NDU3YzNlYTg0NDhkZWQ2YWE2OGRkMDAiLCJhdWQiOiJNb3ZpZXMiLCJpYXQiOjE2ODM3MjAyMzMsImV4cCI6MTY4MzcyNzQzMywiYXpwIjoieFNTcElwZFJtWW95Vld0MW5ROHZiVjl2ZFRQczl1Wk4iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTptb3ZpZSIsImRlbGV0ZTpzaG93IiwiZGVsZXRlOnZlbnVlIiwiZ2V0Om1vdmllIiwiZ2V0OnZlbnVlIiwicGF0Y2g6bW92aWUiLCJwYXRjaDpzaG93IiwicGF0Y2g6dmVudWUiLCJwb3N0Om1vdmllIiwicG9zdDpzaG93IiwicG9zdDp2ZW51ZSJdfQ.m9AZnEtJ89d8Su73dQtpM-OpkM-jruOcg8KJVlgRrg3bbkwb3KVOnJD2qJMSEEswShaATklG0wKvBpZRDnV6BXgJpcb3iiMZMSNP3BGxuyzqtrf7UiELjZ56MPXtAdlQ1h4xfOgTLDSBROEqnkCNtGzCo3HUl43ieMtaej7WJn47qQXHj3MeNeS9OfJ6K9WImYHoYMhk741zfzm8w4zKcjNh8IJKIT5KiaSm9r8YTTG2Sy4PeeBs6BCDDN6k4lYsdHGy1B_5h_PDls99NA0EaWZkoLuYQ5s1ZBtxVfpvJTsxFTLdyT-rO6F7pynds3haDD5RjFVd5eEH_Fo0myGCbw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Homecoming3\",\r\n    \"language\":\"English Chinese\",\r\n    \"producer\":\"abc\",\r\n    \"director\":\"def\",\r\n    \"budget\":900000,\r\n    \"actors\":\"a bv cd fe\",\r\n    \"planned_release_date\":\"2023-01-01\",\r\n    \"ticket_price\":200\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://capstone-zokq.onrender.com/movie/add",
+							"protocol": "https",
+							"host": [
+								"capstone-zokq",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"movie",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modify Movie",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJCNFNNdzRTZDF3VjJ0bnU3WUNYWSJ9.eyJpc3MiOiJodHRwczovL2Rldi1leDY1azJxMjRxY2N1MDhmLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NDU3YzNlYTg0NDhkZWQ2YWE2OGRkMDAiLCJhdWQiOiJNb3ZpZXMiLCJpYXQiOjE2ODM3MjAyMzMsImV4cCI6MTY4MzcyNzQzMywiYXpwIjoieFNTcElwZFJtWW95Vld0MW5ROHZiVjl2ZFRQczl1Wk4iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTptb3ZpZSIsImRlbGV0ZTpzaG93IiwiZGVsZXRlOnZlbnVlIiwiZ2V0Om1vdmllIiwiZ2V0OnZlbnVlIiwicGF0Y2g6bW92aWUiLCJwYXRjaDpzaG93IiwicGF0Y2g6dmVudWUiLCJwb3N0Om1vdmllIiwicG9zdDpzaG93IiwicG9zdDp2ZW51ZSJdfQ.m9AZnEtJ89d8Su73dQtpM-OpkM-jruOcg8KJVlgRrg3bbkwb3KVOnJD2qJMSEEswShaATklG0wKvBpZRDnV6BXgJpcb3iiMZMSNP3BGxuyzqtrf7UiELjZ56MPXtAdlQ1h4xfOgTLDSBROEqnkCNtGzCo3HUl43ieMtaej7WJn47qQXHj3MeNeS9OfJ6K9WImYHoYMhk741zfzm8w4zKcjNh8IJKIT5KiaSm9r8YTTG2Sy4PeeBs6BCDDN6k4lYsdHGy1B_5h_PDls99NA0EaWZkoLuYQ5s1ZBtxVfpvJTsxFTLdyT-rO6F7pynds3haDD5RjFVd5eEH_Fo0myGCbw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Homecoming\",\r\n    \"language\":\"French\",\r\n    \"producer\":\"abcg\",\r\n    \"director\":\"defm\",\r\n    \"budget\":460000,\r\n    \"actors\":\"a bv cd fe\",\r\n    \"planned_release_date\":\"2023-01-01\",\r\n    \"ticket_price\":200\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://capstone-zokq.onrender.com/movie/patch/1",
+							"protocol": "https",
+							"host": [
+								"capstone-zokq",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"movie",
+								"patch",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Movie",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJCNFNNdzRTZDF3VjJ0bnU3WUNYWSJ9.eyJpc3MiOiJodHRwczovL2Rldi1leDY1azJxMjRxY2N1MDhmLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NDU3YzNlYTg0NDhkZWQ2YWE2OGRkMDAiLCJhdWQiOiJNb3ZpZXMiLCJpYXQiOjE2ODM3MjAyMzMsImV4cCI6MTY4MzcyNzQzMywiYXpwIjoieFNTcElwZFJtWW95Vld0MW5ROHZiVjl2ZFRQczl1Wk4iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTptb3ZpZSIsImRlbGV0ZTpzaG93IiwiZGVsZXRlOnZlbnVlIiwiZ2V0Om1vdmllIiwiZ2V0OnZlbnVlIiwicGF0Y2g6bW92aWUiLCJwYXRjaDpzaG93IiwicGF0Y2g6dmVudWUiLCJwb3N0Om1vdmllIiwicG9zdDpzaG93IiwicG9zdDp2ZW51ZSJdfQ.m9AZnEtJ89d8Su73dQtpM-OpkM-jruOcg8KJVlgRrg3bbkwb3KVOnJD2qJMSEEswShaATklG0wKvBpZRDnV6BXgJpcb3iiMZMSNP3BGxuyzqtrf7UiELjZ56MPXtAdlQ1h4xfOgTLDSBROEqnkCNtGzCo3HUl43ieMtaej7WJn47qQXHj3MeNeS9OfJ6K9WImYHoYMhk741zfzm8w4zKcjNh8IJKIT5KiaSm9r8YTTG2Sy4PeeBs6BCDDN6k4lYsdHGy1B_5h_PDls99NA0EaWZkoLuYQ5s1ZBtxVfpvJTsxFTLdyT-rO6F7pynds3haDD5RjFVd5eEH_Fo0myGCbw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://capstone-zokq.onrender.com/movie/delete/3",
+							"protocol": "https",
+							"host": [
+								"capstone-zokq",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"movie",
+								"delete",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Movie Director",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJCNFNNdzRTZDF3VjJ0bnU3WUNYWSJ9.eyJpc3MiOiJodHRwczovL2Rldi1leDY1azJxMjRxY2N1MDhmLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NDU3YzNlYTg0NDhkZWQ2YWE2OGRkMDAiLCJhdWQiOiJNb3ZpZXMiLCJpYXQiOjE2ODM3MjAyMzMsImV4cCI6MTY4MzcyNzQzMywiYXpwIjoieFNTcElwZFJtWW95Vld0MW5ROHZiVjl2ZFRQczl1Wk4iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTptb3ZpZSIsImRlbGV0ZTpzaG93IiwiZGVsZXRlOnZlbnVlIiwiZ2V0Om1vdmllIiwiZ2V0OnZlbnVlIiwicGF0Y2g6bW92aWUiLCJwYXRjaDpzaG93IiwicGF0Y2g6dmVudWUiLCJwb3N0Om1vdmllIiwicG9zdDpzaG93IiwicG9zdDp2ZW51ZSJdfQ.m9AZnEtJ89d8Su73dQtpM-OpkM-jruOcg8KJVlgRrg3bbkwb3KVOnJD2qJMSEEswShaATklG0wKvBpZRDnV6BXgJpcb3iiMZMSNP3BGxuyzqtrf7UiELjZ56MPXtAdlQ1h4xfOgTLDSBROEqnkCNtGzCo3HUl43ieMtaej7WJn47qQXHj3MeNeS9OfJ6K9WImYHoYMhk741zfzm8w4zKcjNh8IJKIT5KiaSm9r8YTTG2Sy4PeeBs6BCDDN6k4lYsdHGy1B_5h_PDls99NA0EaWZkoLuYQ5s1ZBtxVfpvJTsxFTLdyT-rO6F7pynds3haDD5RjFVd5eEH_Fo0myGCbw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://capstone-zokq.onrender.com/movie/owner/2",
+							"protocol": "https",
+							"host": [
+								"capstone-zokq",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"movie",
+								"owner",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modify Movie",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJCNFNNdzRTZDF3VjJ0bnU3WUNYWSJ9.eyJpc3MiOiJodHRwczovL2Rldi1leDY1azJxMjRxY2N1MDhmLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NDU3YzNlYTg0NDhkZWQ2YWE2OGRkMDAiLCJhdWQiOiJNb3ZpZXMiLCJpYXQiOjE2ODM3MjAyMzMsImV4cCI6MTY4MzcyNzQzMywiYXpwIjoieFNTcElwZFJtWW95Vld0MW5ROHZiVjl2ZFRQczl1Wk4iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTptb3ZpZSIsImRlbGV0ZTpzaG93IiwiZGVsZXRlOnZlbnVlIiwiZ2V0Om1vdmllIiwiZ2V0OnZlbnVlIiwicGF0Y2g6bW92aWUiLCJwYXRjaDpzaG93IiwicGF0Y2g6dmVudWUiLCJwb3N0Om1vdmllIiwicG9zdDpzaG93IiwicG9zdDp2ZW51ZSJdfQ.m9AZnEtJ89d8Su73dQtpM-OpkM-jruOcg8KJVlgRrg3bbkwb3KVOnJD2qJMSEEswShaATklG0wKvBpZRDnV6BXgJpcb3iiMZMSNP3BGxuyzqtrf7UiELjZ56MPXtAdlQ1h4xfOgTLDSBROEqnkCNtGzCo3HUl43ieMtaej7WJn47qQXHj3MeNeS9OfJ6K9WImYHoYMhk741zfzm8w4zKcjNh8IJKIT5KiaSm9r8YTTG2Sy4PeeBs6BCDDN6k4lYsdHGy1B_5h_PDls99NA0EaWZkoLuYQ5s1ZBtxVfpvJTsxFTLdyT-rO6F7pynds3haDD5RjFVd5eEH_Fo0myGCbw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Homecoming45\",\r\n    \"language\":\"German\",\r\n    \"producer\":\"abcg\",\r\n    \"director\":\"defm\",\r\n    \"budget\":460000,\r\n    \"actors\":\"a bv cd fe\",\r\n    \"planned_release_date\":\"2023-01-01\",\r\n    \"ticket_price\":200\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://capstone-zokq.onrender.com/movie/patch/2",
+							"protocol": "https",
+							"host": [
+								"capstone-zokq",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"movie",
+								"patch",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Theatre Owner",
+			"item": [
+				{
+					"name": "Create Venue",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJCNFNNdzRTZDF3VjJ0bnU3WUNYWSJ9.eyJpc3MiOiJodHRwczovL2Rldi1leDY1azJxMjRxY2N1MDhmLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NDU3YzNlYTg0NDhkZWQ2YWE2OGRkMDAiLCJhdWQiOiJNb3ZpZXMiLCJpYXQiOjE2ODM3MjAyMzMsImV4cCI6MTY4MzcyNzQzMywiYXpwIjoieFNTcElwZFJtWW95Vld0MW5ROHZiVjl2ZFRQczl1Wk4iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTptb3ZpZSIsImRlbGV0ZTpzaG93IiwiZGVsZXRlOnZlbnVlIiwiZ2V0Om1vdmllIiwiZ2V0OnZlbnVlIiwicGF0Y2g6bW92aWUiLCJwYXRjaDpzaG93IiwicGF0Y2g6dmVudWUiLCJwb3N0Om1vdmllIiwicG9zdDpzaG93IiwicG9zdDp2ZW51ZSJdfQ.m9AZnEtJ89d8Su73dQtpM-OpkM-jruOcg8KJVlgRrg3bbkwb3KVOnJD2qJMSEEswShaATklG0wKvBpZRDnV6BXgJpcb3iiMZMSNP3BGxuyzqtrf7UiELjZ56MPXtAdlQ1h4xfOgTLDSBROEqnkCNtGzCo3HUl43ieMtaej7WJn47qQXHj3MeNeS9OfJ6K9WImYHoYMhk741zfzm8w4zKcjNh8IJKIT5KiaSm9r8YTTG2Sy4PeeBs6BCDDN6k4lYsdHGy1B_5h_PDls99NA0EaWZkoLuYQ5s1ZBtxVfpvJTsxFTLdyT-rO6F7pynds3haDD5RjFVd5eEH_Fo0myGCbw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"IMAX1\",\r\n    \"city\":\"New York City\",\r\n    \"state\": \"New York\",\r\n    \"address\":\"Stree 1 wall Street\",\r\n    \"capacity\":300,\r\n    \"contact_number\":\"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://capstone-zokq.onrender.com/venues/create",
+							"protocol": "https",
+							"host": [
+								"capstone-zokq",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"venues",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Venue2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJCNFNNdzRTZDF3VjJ0bnU3WUNYWSJ9.eyJpc3MiOiJodHRwczovL2Rldi1leDY1azJxMjRxY2N1MDhmLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NDU3YzNlYTg0NDhkZWQ2YWE2OGRkMDAiLCJhdWQiOiJNb3ZpZXMiLCJpYXQiOjE2ODM3MjAyMzMsImV4cCI6MTY4MzcyNzQzMywiYXpwIjoieFNTcElwZFJtWW95Vld0MW5ROHZiVjl2ZFRQczl1Wk4iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTptb3ZpZSIsImRlbGV0ZTpzaG93IiwiZGVsZXRlOnZlbnVlIiwiZ2V0Om1vdmllIiwiZ2V0OnZlbnVlIiwicGF0Y2g6bW92aWUiLCJwYXRjaDpzaG93IiwicGF0Y2g6dmVudWUiLCJwb3N0Om1vdmllIiwicG9zdDpzaG93IiwicG9zdDp2ZW51ZSJdfQ.m9AZnEtJ89d8Su73dQtpM-OpkM-jruOcg8KJVlgRrg3bbkwb3KVOnJD2qJMSEEswShaATklG0wKvBpZRDnV6BXgJpcb3iiMZMSNP3BGxuyzqtrf7UiELjZ56MPXtAdlQ1h4xfOgTLDSBROEqnkCNtGzCo3HUl43ieMtaej7WJn47qQXHj3MeNeS9OfJ6K9WImYHoYMhk741zfzm8w4zKcjNh8IJKIT5KiaSm9r8YTTG2Sy4PeeBs6BCDDN6k4lYsdHGy1B_5h_PDls99NA0EaWZkoLuYQ5s1ZBtxVfpvJTsxFTLdyT-rO6F7pynds3haDD5RjFVd5eEH_Fo0myGCbw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"IMAX1\",\r\n    \"city\":\"New York City\",\r\n    \"state\": \"New York\",\r\n    \"address\":\"Stree 1 wall Street\",\r\n    \"capacity\":300,\r\n    \"contact_number\":\"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://capstone-zokq.onrender.com/venues/create",
+							"protocol": "https",
+							"host": [
+								"capstone-zokq",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"venues",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Movie Confidentail details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJCNFNNdzRTZDF3VjJ0bnU3WUNYWSJ9.eyJpc3MiOiJodHRwczovL2Rldi1leDY1azJxMjRxY2N1MDhmLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NDU3YzNlYTg0NDhkZWQ2YWE2OGRkMDAiLCJhdWQiOiJNb3ZpZXMiLCJpYXQiOjE2ODM3MjAyMzMsImV4cCI6MTY4MzcyNzQzMywiYXpwIjoieFNTcElwZFJtWW95Vld0MW5ROHZiVjl2ZFRQczl1Wk4iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTptb3ZpZSIsImRlbGV0ZTpzaG93IiwiZGVsZXRlOnZlbnVlIiwiZ2V0Om1vdmllIiwiZ2V0OnZlbnVlIiwicGF0Y2g6bW92aWUiLCJwYXRjaDpzaG93IiwicGF0Y2g6dmVudWUiLCJwb3N0Om1vdmllIiwicG9zdDpzaG93IiwicG9zdDp2ZW51ZSJdfQ.m9AZnEtJ89d8Su73dQtpM-OpkM-jruOcg8KJVlgRrg3bbkwb3KVOnJD2qJMSEEswShaATklG0wKvBpZRDnV6BXgJpcb3iiMZMSNP3BGxuyzqtrf7UiELjZ56MPXtAdlQ1h4xfOgTLDSBROEqnkCNtGzCo3HUl43ieMtaej7WJn47qQXHj3MeNeS9OfJ6K9WImYHoYMhk741zfzm8w4zKcjNh8IJKIT5KiaSm9r8YTTG2Sy4PeeBs6BCDDN6k4lYsdHGy1B_5h_PDls99NA0EaWZkoLuYQ5s1ZBtxVfpvJTsxFTLdyT-rO6F7pynds3haDD5RjFVd5eEH_Fo0myGCbw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://capstone-zokq.onrender.com/venues/owner/1",
+							"protocol": "https",
+							"host": [
+								"capstone-zokq",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"venues",
+								"owner",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch Venue",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJCNFNNdzRTZDF3VjJ0bnU3WUNYWSJ9.eyJpc3MiOiJodHRwczovL2Rldi1leDY1azJxMjRxY2N1MDhmLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NDU3YzNlYTg0NDhkZWQ2YWE2OGRkMDAiLCJhdWQiOiJNb3ZpZXMiLCJpYXQiOjE2ODM3MjAyMzMsImV4cCI6MTY4MzcyNzQzMywiYXpwIjoieFNTcElwZFJtWW95Vld0MW5ROHZiVjl2ZFRQczl1Wk4iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTptb3ZpZSIsImRlbGV0ZTpzaG93IiwiZGVsZXRlOnZlbnVlIiwiZ2V0Om1vdmllIiwiZ2V0OnZlbnVlIiwicGF0Y2g6bW92aWUiLCJwYXRjaDpzaG93IiwicGF0Y2g6dmVudWUiLCJwb3N0Om1vdmllIiwicG9zdDpzaG93IiwicG9zdDp2ZW51ZSJdfQ.m9AZnEtJ89d8Su73dQtpM-OpkM-jruOcg8KJVlgRrg3bbkwb3KVOnJD2qJMSEEswShaATklG0wKvBpZRDnV6BXgJpcb3iiMZMSNP3BGxuyzqtrf7UiELjZ56MPXtAdlQ1h4xfOgTLDSBROEqnkCNtGzCo3HUl43ieMtaej7WJn47qQXHj3MeNeS9OfJ6K9WImYHoYMhk741zfzm8w4zKcjNh8IJKIT5KiaSm9r8YTTG2Sy4PeeBs6BCDDN6k4lYsdHGy1B_5h_PDls99NA0EaWZkoLuYQ5s1ZBtxVfpvJTsxFTLdyT-rO6F7pynds3haDD5RjFVd5eEH_Fo0myGCbw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"IMAX1\",\r\n    \"city\":\"New York City\",\r\n    \"state\": \"New York\",\r\n    \"address\":\"Stree 1 wall Street\",\r\n    \"capacity\":300,\r\n    \"contact_number\":\"12345678990\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://capstone-zokq.onrender.com/venues/change/1",
+							"protocol": "https",
+							"host": [
+								"capstone-zokq",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"venues",
+								"change",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Venue",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJCNFNNdzRTZDF3VjJ0bnU3WUNYWSJ9.eyJpc3MiOiJodHRwczovL2Rldi1leDY1azJxMjRxY2N1MDhmLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NDU3YzNlYTg0NDhkZWQ2YWE2OGRkMDAiLCJhdWQiOiJNb3ZpZXMiLCJpYXQiOjE2ODM3MjAyMzMsImV4cCI6MTY4MzcyNzQzMywiYXpwIjoieFNTcElwZFJtWW95Vld0MW5ROHZiVjl2ZFRQczl1Wk4iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTptb3ZpZSIsImRlbGV0ZTpzaG93IiwiZGVsZXRlOnZlbnVlIiwiZ2V0Om1vdmllIiwiZ2V0OnZlbnVlIiwicGF0Y2g6bW92aWUiLCJwYXRjaDpzaG93IiwicGF0Y2g6dmVudWUiLCJwb3N0Om1vdmllIiwicG9zdDpzaG93IiwicG9zdDp2ZW51ZSJdfQ.m9AZnEtJ89d8Su73dQtpM-OpkM-jruOcg8KJVlgRrg3bbkwb3KVOnJD2qJMSEEswShaATklG0wKvBpZRDnV6BXgJpcb3iiMZMSNP3BGxuyzqtrf7UiELjZ56MPXtAdlQ1h4xfOgTLDSBROEqnkCNtGzCo3HUl43ieMtaej7WJn47qQXHj3MeNeS9OfJ6K9WImYHoYMhk741zfzm8w4zKcjNh8IJKIT5KiaSm9r8YTTG2Sy4PeeBs6BCDDN6k4lYsdHGy1B_5h_PDls99NA0EaWZkoLuYQ5s1ZBtxVfpvJTsxFTLdyT-rO6F7pynds3haDD5RjFVd5eEH_Fo0myGCbw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://capstone-zokq.onrender.com/venues/delete/2",
+							"protocol": "https",
+							"host": [
+								"capstone-zokq",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"venues",
+								"delete",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Shows",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJCNFNNdzRTZDF3VjJ0bnU3WUNYWSJ9.eyJpc3MiOiJodHRwczovL2Rldi1leDY1azJxMjRxY2N1MDhmLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NDU3YzNlYTg0NDhkZWQ2YWE2OGRkMDAiLCJhdWQiOiJNb3ZpZXMiLCJpYXQiOjE2ODM3MjAyMzMsImV4cCI6MTY4MzcyNzQzMywiYXpwIjoieFNTcElwZFJtWW95Vld0MW5ROHZiVjl2ZFRQczl1Wk4iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTptb3ZpZSIsImRlbGV0ZTpzaG93IiwiZGVsZXRlOnZlbnVlIiwiZ2V0Om1vdmllIiwiZ2V0OnZlbnVlIiwicGF0Y2g6bW92aWUiLCJwYXRjaDpzaG93IiwicGF0Y2g6dmVudWUiLCJwb3N0Om1vdmllIiwicG9zdDpzaG93IiwicG9zdDp2ZW51ZSJdfQ.m9AZnEtJ89d8Su73dQtpM-OpkM-jruOcg8KJVlgRrg3bbkwb3KVOnJD2qJMSEEswShaATklG0wKvBpZRDnV6BXgJpcb3iiMZMSNP3BGxuyzqtrf7UiELjZ56MPXtAdlQ1h4xfOgTLDSBROEqnkCNtGzCo3HUl43ieMtaej7WJn47qQXHj3MeNeS9OfJ6K9WImYHoYMhk741zfzm8w4zKcjNh8IJKIT5KiaSm9r8YTTG2Sy4PeeBs6BCDDN6k4lYsdHGy1B_5h_PDls99NA0EaWZkoLuYQ5s1ZBtxVfpvJTsxFTLdyT-rO6F7pynds3haDD5RjFVd5eEH_Fo0myGCbw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"datetime\":\"2023-01-01\",\r\n    \"venue_id\":1,\r\n    \"movie_id\":1,\r\n    \"movie_charge\":5000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://capstone-zokq.onrender.com/shows/create",
+							"protocol": "https",
+							"host": [
+								"capstone-zokq",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"shows",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Shows 2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJCNFNNdzRTZDF3VjJ0bnU3WUNYWSJ9.eyJpc3MiOiJodHRwczovL2Rldi1leDY1azJxMjRxY2N1MDhmLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NDU3YzNlYTg0NDhkZWQ2YWE2OGRkMDAiLCJhdWQiOiJNb3ZpZXMiLCJpYXQiOjE2ODM3MjAyMzMsImV4cCI6MTY4MzcyNzQzMywiYXpwIjoieFNTcElwZFJtWW95Vld0MW5ROHZiVjl2ZFRQczl1Wk4iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTptb3ZpZSIsImRlbGV0ZTpzaG93IiwiZGVsZXRlOnZlbnVlIiwiZ2V0Om1vdmllIiwiZ2V0OnZlbnVlIiwicGF0Y2g6bW92aWUiLCJwYXRjaDpzaG93IiwicGF0Y2g6dmVudWUiLCJwb3N0Om1vdmllIiwicG9zdDpzaG93IiwicG9zdDp2ZW51ZSJdfQ.m9AZnEtJ89d8Su73dQtpM-OpkM-jruOcg8KJVlgRrg3bbkwb3KVOnJD2qJMSEEswShaATklG0wKvBpZRDnV6BXgJpcb3iiMZMSNP3BGxuyzqtrf7UiELjZ56MPXtAdlQ1h4xfOgTLDSBROEqnkCNtGzCo3HUl43ieMtaej7WJn47qQXHj3MeNeS9OfJ6K9WImYHoYMhk741zfzm8w4zKcjNh8IJKIT5KiaSm9r8YTTG2Sy4PeeBs6BCDDN6k4lYsdHGy1B_5h_PDls99NA0EaWZkoLuYQ5s1ZBtxVfpvJTsxFTLdyT-rO6F7pynds3haDD5RjFVd5eEH_Fo0myGCbw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"datetime\":\"2023-01-01\",\r\n    \"venue_id\":1,\r\n    \"movie_id\":2,\r\n    \"movie_charge\":5000\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://capstone-zokq.onrender.com/shows/create",
+							"protocol": "https",
+							"host": [
+								"capstone-zokq",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"shows",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Show",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJCNFNNdzRTZDF3VjJ0bnU3WUNYWSJ9.eyJpc3MiOiJodHRwczovL2Rldi1leDY1azJxMjRxY2N1MDhmLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NDU3YzNlYTg0NDhkZWQ2YWE2OGRkMDAiLCJhdWQiOiJNb3ZpZXMiLCJpYXQiOjE2ODM3MjAyMzMsImV4cCI6MTY4MzcyNzQzMywiYXpwIjoieFNTcElwZFJtWW95Vld0MW5ROHZiVjl2ZFRQczl1Wk4iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTptb3ZpZSIsImRlbGV0ZTpzaG93IiwiZGVsZXRlOnZlbnVlIiwiZ2V0Om1vdmllIiwiZ2V0OnZlbnVlIiwicGF0Y2g6bW92aWUiLCJwYXRjaDpzaG93IiwicGF0Y2g6dmVudWUiLCJwb3N0Om1vdmllIiwicG9zdDpzaG93IiwicG9zdDp2ZW51ZSJdfQ.m9AZnEtJ89d8Su73dQtpM-OpkM-jruOcg8KJVlgRrg3bbkwb3KVOnJD2qJMSEEswShaATklG0wKvBpZRDnV6BXgJpcb3iiMZMSNP3BGxuyzqtrf7UiELjZ56MPXtAdlQ1h4xfOgTLDSBROEqnkCNtGzCo3HUl43ieMtaej7WJn47qQXHj3MeNeS9OfJ6K9WImYHoYMhk741zfzm8w4zKcjNh8IJKIT5KiaSm9r8YTTG2Sy4PeeBs6BCDDN6k4lYsdHGy1B_5h_PDls99NA0EaWZkoLuYQ5s1ZBtxVfpvJTsxFTLdyT-rO6F7pynds3haDD5RjFVd5eEH_Fo0myGCbw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"datetime\":\"2023-01-01\",\r\n    \"venue_id\":1,\r\n    \"movie_id\":1,\r\n    \"movie_charge\":60000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://capstone-zokq.onrender.com/shows/change/1",
+							"protocol": "https",
+							"host": [
+								"capstone-zokq",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"shows",
+								"change",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Shows",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJCNFNNdzRTZDF3VjJ0bnU3WUNYWSJ9.eyJpc3MiOiJodHRwczovL2Rldi1leDY1azJxMjRxY2N1MDhmLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NDU3YzNlYTg0NDhkZWQ2YWE2OGRkMDAiLCJhdWQiOiJNb3ZpZXMiLCJpYXQiOjE2ODM3MjAyMzMsImV4cCI6MTY4MzcyNzQzMywiYXpwIjoieFNTcElwZFJtWW95Vld0MW5ROHZiVjl2ZFRQczl1Wk4iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTptb3ZpZSIsImRlbGV0ZTpzaG93IiwiZGVsZXRlOnZlbnVlIiwiZ2V0Om1vdmllIiwiZ2V0OnZlbnVlIiwicGF0Y2g6bW92aWUiLCJwYXRjaDpzaG93IiwicGF0Y2g6dmVudWUiLCJwb3N0Om1vdmllIiwicG9zdDpzaG93IiwicG9zdDp2ZW51ZSJdfQ.m9AZnEtJ89d8Su73dQtpM-OpkM-jruOcg8KJVlgRrg3bbkwb3KVOnJD2qJMSEEswShaATklG0wKvBpZRDnV6BXgJpcb3iiMZMSNP3BGxuyzqtrf7UiELjZ56MPXtAdlQ1h4xfOgTLDSBROEqnkCNtGzCo3HUl43ieMtaej7WJn47qQXHj3MeNeS9OfJ6K9WImYHoYMhk741zfzm8w4zKcjNh8IJKIT5KiaSm9r8YTTG2Sy4PeeBs6BCDDN6k4lYsdHGy1B_5h_PDls99NA0EaWZkoLuYQ5s1ZBtxVfpvJTsxFTLdyT-rO6F7pynds3haDD5RjFVd5eEH_Fo0myGCbw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://capstone-zokq.onrender.com/shows/delete/1",
+							"protocol": "https",
+							"host": [
+								"capstone-zokq",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"shows",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Public",
+			"item": [
+				{
+					"name": "Home Page",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://capstone-zokq.onrender.com/",
+							"protocol": "https",
+							"host": [
+								"capstone-zokq",
+								"onrender",
+								"com"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Movie Page",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://capstone-zokq.onrender.com/movies",
+							"protocol": "https",
+							"host": [
+								"capstone-zokq",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Venue Page",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://capstone-zokq.onrender.com/venues",
+							"protocol": "https",
+							"host": [
+								"capstone-zokq",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"venues"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search venues for a movie",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://capstone-zokq.onrender.com/movies/1",
+							"protocol": "https",
+							"host": [
+								"capstone-zokq",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"movies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search movies for a venue",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://capstone-zokq.onrender.com/venues/1",
+							"protocol": "https",
+							"host": [
+								"capstone-zokq",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"venues",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
