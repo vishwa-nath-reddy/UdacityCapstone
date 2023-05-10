@@ -48,6 +48,8 @@ def home():
 
 @app.route('/venues', methods=['GET'])
 def venues():
+    if request.method!='GET':
+        abort(404)
     try:
         cityStateCombo = db.session.query(Venue).distinct().all()
         result = []
@@ -62,6 +64,8 @@ def venues():
 
 @app.route('/movies', methods=['GET'])
 def movies():
+    if request.method!='GET':
+        abort(404)
     try:
         print('movie')
         print(Movie)
@@ -80,6 +84,8 @@ def movies():
 
 @app.route('/venues/<int:venue_id>', methods=['GET'])
 def show_venue(*li,**yi):
+    if request.method!='GET':
+        abort(404)
     x=yi.get('venue_id')
     result = db.session.query(Show).filter(Show.venue_id == x).all()
     target = {}
@@ -98,6 +104,8 @@ def show_venue(*li,**yi):
 
 @app.route('/movies/<int:movie_id>', methods=['GET'])
 def show_movie(*li,**yi):
+    if request.method!='GET':
+        abort(404)
     x=yi.get('movie_id')
     result = db.session.query(Show).filter(Show.movie_id == x).all()
     target = {}
@@ -119,6 +127,8 @@ def show_movie(*li,**yi):
 @app.route('/venues/create', methods=['POST'])
 @requires_auth('post:venue')
 def create_venue_form(*ki):
+    if request.method!='POST':
+        abort(404)
     print('jere')
     body = request.get_json()
     print(body)
@@ -141,6 +151,8 @@ def create_venue_form(*ki):
 @app.route('/venues/change/<int:venue_id>', methods=['PATCH'])
 @requires_auth('patch:venue')
 def modify_venue_form(*li,**yi):
+    if request.method!='PATCH':
+        abort(404)
     x=yi.get('venue_id')
     body = request.get_json()
     if (
@@ -169,6 +181,8 @@ def modify_venue_form(*li,**yi):
 @app.route('/venues/delete/<int:venue_id>', methods=['DELETE'])
 @requires_auth('delete:venue')
 def delete_venue_form(*li,**yi):
+    if request.method!='DELETE':
+        abort(404)
     x=yi.get('venue_id')
     base = db.session.query(Venue).filter(Venue.id == x).first()
     if base == None:
@@ -187,6 +201,8 @@ def delete_venue_form(*li,**yi):
 @app.route('/venues/owner/<int:movie_id>', methods=['GET'])
 @requires_auth('get:venue')
 def show_venue_full(*li,**yi):
+    if request.method!='GET':
+        abort(404)
     x=yi.get('movie_id')
     print(x)
     try:
@@ -215,6 +231,8 @@ def show_venue_full(*li,**yi):
 @app.route('/shows/create', methods=['POST'])
 @requires_auth('post:show')
 def create_show_form(*ki):
+    if request.method!='POST':
+        abort(404)
     print('there')
     body = request.get_json()
     print(body)
@@ -243,6 +261,8 @@ def create_show_form(*ki):
 @app.route('/shows/change/<int:id>', methods=['PATCH'])
 @requires_auth('patch:show')
 def modify_show_form(*li,**yi):
+    if request.method!='PATCH':
+        abort(404)
     x=yi.get('id')
     body = request.get_json()
     print(body)
@@ -270,6 +290,8 @@ def modify_show_form(*li,**yi):
 @app.route('/shows/delete/<int:id>', methods=['DELETE'])
 @requires_auth('delete:show')
 def delete_show_form(*li,**yi):
+    if request.method!='DELETE':
+        abort(404)
     x=yi.get('id')
     if db.session.query(Show).filter(Show.id == x).first() is not None:
         base = db.session.query(Show).filter(Show.id == x).first()
@@ -291,6 +313,8 @@ def delete_show_form(*li,**yi):
 @app.route('/movie/owner/<int:movie_id>', methods=['GET'])
 @requires_auth('get:movie')
 def show_movie_full(*li,**yi):
+    if request.method!='GET':
+        abort(404)
     x=yi.get('movie_id')
     try:
         result = db.session.query(Movie).filter(Movie.id == x).first().producer_spl()
@@ -303,6 +327,8 @@ def show_movie_full(*li,**yi):
 @app.route('/movie/patch/<int:movie_id>', methods=['PATCH'])
 @requires_auth('patch:movie')
 def edit_movie_full(*x,**y):
+    if request.method!='PATCH':
+        abort(404)
     print('alfa')
     print(x)
     print(y)
@@ -340,6 +366,8 @@ def edit_movie_full(*x,**y):
 @app.route('/movie/add', methods=['POST'])
 @requires_auth('post:movie')
 def add_movie_full(ki):
+    if request.method!='POST':
+        abort(404)
     body = request.get_json()
     print('finally')
     print(body)
@@ -361,6 +389,8 @@ def add_movie_full(ki):
 @app.route('/movie/delete/<int:movie_id>', methods=['DELETE'])
 @requires_auth('delete:movie')
 def delete_movie_full(*li,**yi):
+    if request.method!='DELETE':
+        abort(404)
     print(yi)
     x=yi.get('movie_id')
     if db.session.query(Movie).filter(Movie.id == x).first() is not None:
