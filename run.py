@@ -1,4 +1,4 @@
-import gunicorn
-from models import create_app
+# import gunicorn
+# from models import create_app
 
-app = create_app()
+# app = create_app()
