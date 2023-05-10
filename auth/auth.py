@@ -13,9 +13,9 @@ from os import environ as env
 import jwt
 import requests
 from jwt.algorithms import RSAAlgorithm
-AUTH0_DOMAIN = 'dev-ex65k2q24qccu08f.us.auth0.com'
-ALGORITHMS = ['RS256']
-API_AUDIENCE = 'Movies'
+AUTH0_DOMAIN = env.get('AUTH0_DOMAIN')
+ALGORITHMS = [env.get('ALGORITHMS')]
+API_AUDIENCE = env.get('API_AUDIENCE')
 
 ## AuthError Exception
 '''
