@@ -42,8 +42,8 @@ https://fsnd-family-tree.herokuapp.com
 
 ### Retreiving data 
 
-The requests valid to retrieve data are mentioned in `postman` test file, 
-Please use it directly and feel free to modify the requests
+The allowed requests are as follows:
+1.
 
 
 
